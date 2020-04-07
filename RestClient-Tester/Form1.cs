@@ -34,6 +34,7 @@ namespace RestClient_Tester
                                       + "# Use Comment press '#' begin line" + Environment.NewLine
                                       + "# \"X-Application-Name\" : \"TEST-SYSTEM\"" + Environment.NewLine
                                       + "# \"X-APIKEY\" : \"AUp3x6Uqiesw61LP6qERieUdeTkRstGXflNh/KHxAD8=\"";
+            ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) => true;
         }
         private void SetDropDownMethod()
         {
